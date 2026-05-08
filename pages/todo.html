@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo Manager | CodePilot Hub</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="../index.html" class="logo"><span>CodePilot</span> Hub</a>
+      <a class="back-link" href="../index.html#projects">← Orqaga</a>
+      <button class="theme-btn" id="themeBtn">🌙</button>
+    </nav>
+  </header>
+
+  <main class="app-page">
+    <section class="container">
+      <div class="app-card">
+        <div class="app-header">
+          <div>
+            <p class="eyebrow">Mini app 01</p>
+            <h1>Todo Manager</h1>
+            <p class="hero-text">Vazifa qo‘shing, bajarildi qiling yoki o‘chiring.</p>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <input class="app-input" id="todoInput" type="text" placeholder="Masalan: GitHubga loyiha yuklash" />
+          <button class="app-btn" id="addTodoBtn">Qo‘shish</button>
+        </div>
+
+        <ul class="todo-list" id="todoList"></ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/todo.js"></script>
+</body>
+</html>

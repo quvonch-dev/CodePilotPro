@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Budget Calculator | CodePilot Hub</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="../index.html" class="logo"><span>CodePilot</span> Hub</a>
+      <a class="back-link" href="../index.html#projects">← Orqaga</a>
+      <button class="theme-btn" id="themeBtn">🌙</button>
+    </nav>
+  </header>
+
+  <main class="app-page">
+    <section class="container">
+      <div class="app-card">
+        <p class="eyebrow">Mini app 02</p>
+        <h1>Budget Calculator</h1>
+        <p class="hero-text">Daromad va xarajatlarni qo‘shib, balansni avtomatik hisoblaydi.</p>
+
+        <div class="budget-summary">
+          <article><span>Daromad</span><strong id="incomeTotal">$0</strong></article>
+          <article><span>Xarajat</span><strong id="expenseTotal">$0</strong></article>
+          <article><span>Balans</span><strong id="balanceTotal">$0</strong></article>
+        </div>
+
+        <div class="form-row">
+          <input class="app-input" id="titleInput" type="text" placeholder="Nomi: oylik, ovqat, internet..." />
+          <input class="app-input" id="amountInput" type="number" placeholder="Summa" />
+        </div>
+        <div class="form-row">
+          <select class="app-select" id="typeSelect">
+            <option value="income">Daromad</option>
+            <option value="expense">Xarajat</option>
+          </select>
+          <button class="app-btn" id="addTransactionBtn">Qo‘shish</button>
+        </div>
+
+        <ul class="transaction-list" id="transactionList"></ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/budget.js"></script>
+</body>
+</html>

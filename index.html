@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodePilot Hub | JavaScript Portfolio Project</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="#home" class="logo"><span>CodePilot</span> Hub</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu ochish">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-btn" id="themeBtn" aria-label="Tema almashtirish">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">GitHub uchun tayyor front-end loyiha</p>
+          <h1>JavaScript bilan ishlaydigan <span>Project Hub</span></h1>
+          <p class="hero-text">
+            Bu loyiha GitHub Pages uchun tayyor. Unda qidiruv, filter, dark mode,
+            localStorage va 4 ta mini JavaScript loyiha mavjud.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary">Loyihalarni ko‘rish</a>
+            <a href="./pages/todo.html" class="btn secondary">Demo ochish</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="code-window">
+            <div class="dots"><span></span><span></span><span></span></div>
+            <pre><code>const project = {
+  name: "CodePilot Hub",
+  stack: ["HTML", "CSS", "JavaScript"],
+  status: "GitHub ready 🚀"
+};</code></pre>
+          </div>
+          <div class="floating-stat top">4+ Mini App</div>
+          <div class="floating-stat bottom">100% Responsive</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats section-sm">
+      <div class="container stats-grid">
+        <article><strong data-count="4">0</strong><span>Mini loyiha</span></article>
+        <article><strong data-count="3">0</strong><span>Asosiy texnologiya</span></article>
+        <article><strong data-count="100">0</strong><span>Responsive %</span></article>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-title">
+          <p class="eyebrow">Portfolio uchun</p>
+          <h2>Mini JavaScript loyihalar</h2>
+          <p>Qidiruv yoki filter orqali loyihani tanlang. Har bir button boshqa sahifaga o‘tadi.</p>
+        </div>
+
+        <div class="toolbar">
+          <input type="text" id="searchInput" placeholder="Loyiha qidirish..." />
+          <div class="filters" id="filters">
+            <button class="filter-btn active" data-filter="all">Hammasi</button>
+            <button class="filter-btn" data-filter="productivity">Productivity</button>
+            <button class="filter-btn" data-filter="finance">Finance</button>
+            <button class="filter-btn" data-filter="security">Security</button>
+            <button class="filter-btn" data-filter="game">Game</button>
+          </div>
+        </div>
+
+        <div class="project-grid" id="projectGrid">
+          <article class="project-card" data-category="productivity" data-title="todo task manager reja">
+            <div class="project-icon">✅</div>
+            <h3>Todo Manager</h3>
+            <p>Vazifa qo‘shish, bajarildi qilish va localStorage’da saqlash.</p>
+            <div class="tags"><span>JS</span><span>LocalStorage</span></div>
+            <button class="open-btn" data-url="./pages/todo.html">Ochish</button>
+          </article>
+
+          <article class="project-card" data-category="finance" data-title="budget calculator pul hisob">
+            <div class="project-icon">💰</div>
+            <h3>Budget Calculator</h3>
+            <p>Daromad va xarajatlarni hisoblab balansni ko‘rsatadi.</p>
+            <div class="tags"><span>Form</span><span>Array</span></div>
+            <button class="open-btn" data-url="./pages/budget.html">Ochish</button>
+          </article>
+
+          <article class="project-card" data-category="security" data-title="password checker parol kuchli">
+            <div class="project-icon">🔐</div>
+            <h3>Password Checker</h3>
+            <p>Parol kuchliligini uzunlik, raqam va belgilar orqali tekshiradi.</p>
+            <div class="tags"><span>If/Else</span><span>Regex</span></div>
+            <button class="open-btn" data-url="./pages/password.html">Ochish</button>
+          </article>
+
+          <article class="project-card" data-category="game" data-title="quiz app savol javob test">
+            <div class="project-icon">🧠</div>
+            <h3>JS Quiz App</h3>
+            <p>JavaScript 1-modul uchun savol-javob testi.</p>
+            <div class="tags"><span>Array</span><span>DOM</span></div>
+            <button class="open-btn" data-url="./pages/quiz.html">Ochish</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">Nima uchun yaxshi?</p>
+          <h2>Bu loyiha GitHub profiling uchun kuchli ko‘rinadi</h2>
+        </div>
+        <div class="about-list">
+          <p>✔ Responsive dizayn: telefon, planshet va desktopda ishlaydi.</p>
+          <p>✔ JavaScript funksiyalari: DOM, event, localStorage, filter, search.</p>
+          <p>✔ GitHub Pages’da darhol ishlaydi: asosiy fayl <b>index.html</b>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container contact-card">
+        <h2>Loyihani o‘zingniki qilib o‘zgartir</h2>
+        <p>Ismingni, GitHub linkingni va loyihalar nomini o‘zgartirib portfolio sifatida yuklashing mumkin.</p>
+        <a class="btn primary" href="https://github.com/" target="_blank" rel="noreferrer">GitHub ochish</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> CodePilot Hub. Built with HTML, CSS & JavaScript.</p>
+      <a href="#home">Tepaga chiqish ↑</a>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
