@@ -65,3 +65,4 @@ git push -u origin main
 5. Save bosing
 
 Keyin loyiha brauzerda link orqali ochiladi.
+# CodePilotPro
