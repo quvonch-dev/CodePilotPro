@@ -66,3 +66,4 @@ git push -u origin main
 
 Keyin loyiha brauzerda link orqali ochiladi.
 # CodePilotPro
+# CodePilotPro
